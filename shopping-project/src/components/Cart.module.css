@@ -1,0 +1,100 @@
+.cartContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cartItem {
+    width: 100%;
+    border: solid 2px gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartItem img {
+    height: 90px;
+    width: auto;
+}
+
+.imgContainer {
+    background-color: white;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.textContainer img {
+    height: 25px;
+}
+
+.textContainer button {
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
+    margin: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag {
+    width: 50%;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.calculationsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.totalRow {
+    border-top: 2px solid gray;
+    padding-top: 10px;
+}
+
+.calculationsRow,
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutBtn{
+    margin-top: 50px;
+}
+
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  gap: 20px;
+}
+
+.successMessage h2 {
+  color: #2ecc71;
+  font-size: 2rem;
+}
+
+.successMessage p {
+  font-size: 1.2rem;
+  color: #555;
+}

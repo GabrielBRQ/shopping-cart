@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: space-around;
+}
+
+
+img {
+    width: 250px;
+}
+
+.imageContainer {
+    background-color: white;
+    border-radius: 12px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
