@@ -1,9 +1,9 @@
 import icon from "../assets/github-logo.png"
-import "./Footer.module.css";
+import style from "./Footer.module.css";
 
 function Footer () {
     return (
-        <footer>
+        <footer className={style.footer}>
             <p>
                 Esse site foi desenvolvido por <a href="https://www.github.com/gabrielbrq">Gabriel Medeiros <img src={icon} alt="Github Icon" /></a>
             </p>
