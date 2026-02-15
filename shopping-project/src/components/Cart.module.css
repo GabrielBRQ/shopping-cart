@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-height: 70vh;
+    margin-bottom: 75px;
 }
 
 .cartItem {
@@ -20,7 +22,7 @@
 
 .imgContainer {
     background-color: white;
-    width: 90px;
+    min-width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +50,7 @@
 }
 
 .bag {
-    width: 50%;
+    width: 45%;
 }
 
 .cartItems {

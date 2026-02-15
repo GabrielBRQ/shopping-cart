@@ -119,7 +119,6 @@
     width: 150px;
     text-align: center;
     align-self: center;
-
     background-color: white;
     color: black;
     padding: 12px 24px;
@@ -128,7 +127,7 @@
     border-radius: 30px;
     font-size: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    
+    margin: 50px;
 }
 
 .exploreButton:hover {

@@ -7,6 +7,8 @@ import Cart from "./components/Cart";
 import ErrorPage from "./components/ErrorPage";
 import Header from "./components/Header";
 import ProductDetails from "./components/ProductDetails";
+import About from "./components/About";
+import Footer from "./components/Footer";
 import "./index.css";
 
 export interface Product {
@@ -17,7 +19,7 @@ export interface Product {
 }
 
 export interface CartItem extends Product {
-  cartId: string; // ID único para o front-end
+  cartId: string;
 }
 
 const Layout = () => {
@@ -26,7 +28,7 @@ const Layout = () => {
   const addToCart = (product: Product) => {
     const newItem = {
       ...product,
-      cartId: crypto.randomUUID() // Gera um ID único: "36b8f84d-..."
+      cartId: crypto.randomUUID()
     };
     setCart((prevCart) => [...prevCart, newItem]);
   };
@@ -43,6 +45,7 @@ const Layout = () => {
     <>
       <Header cartCount={cart.length} />
       <Outlet context={{ cart, addToCart, removeFromCart, clearCart }} />
+      <Footer />
     </>
   );
 };
@@ -68,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: "product/:id",
         element: <ProductDetails />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ],
   },
