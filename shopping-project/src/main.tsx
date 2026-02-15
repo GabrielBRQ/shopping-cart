@@ -1,14 +1,14 @@
 import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Home from "./components/Home";
-import Shop from "./components/Shop";
-import Cart from "./components/Cart";
+import Home from "./components/Home/Home";
+import Shop from "./components/Shop/Shop";
+import Cart from "./components/Cart/Cart";
 import ErrorPage from "./components/ErrorPage";
-import Header from "./components/Header";
-import ProductDetails from "./components/ProductDetails";
-import About from "./components/About";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 import "./index.css";
 
 export interface Product {

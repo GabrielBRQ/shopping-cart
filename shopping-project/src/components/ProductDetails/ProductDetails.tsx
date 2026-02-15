@@ -1,8 +1,8 @@
 // ProductDetails.tsx
 import { useParams, useOutletContext } from "react-router-dom";
-import { useProducts } from "../hooks/useProducts";
+import { useProducts } from "../../hooks/useProducts";
 import styles from "./Detail.module.css";
-import type { Product } from "../main";
+import type { Product } from "../../main";
 
 interface OutletContextType {
     addToCart: (product: Product) => void;

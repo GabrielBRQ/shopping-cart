@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useOutletContext, useNavigate } from "react-router-dom";
 import styles from "./Cart.module.css";
-import trash from "../assets/trash.png";
-import type { Product } from "../main";
+import trash from "../../assets/trash.png";
+import type { Product } from "../../main.tsx";
 
 interface CartItem extends Product {
   cartId: string;

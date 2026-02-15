@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { useProducts } from "../hooks/useProducts";
+import { useProducts } from "../../hooks/useProducts";
 import styles from "./Home.module.css";
-import videoFile from "../assets/comercial.mp4";
+import videoFile from "../../assets/comercial.mp4";
 
 function Home() {
     const { products, loading } = useProducts();

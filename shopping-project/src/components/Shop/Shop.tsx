@@ -1,4 +1,4 @@
-import { useProducts } from "../hooks/useProducts";
+import { useProducts } from "../../hooks/useProducts";
 import { Link } from "react-router-dom";
 import styles from "./Shop.module.css";
 

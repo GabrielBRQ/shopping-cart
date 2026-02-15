@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import styles from './Header.module.css';
-import logo from "../assets/Logo.png";
-import hearth from "../assets/hearth.png";
-import bag from "../assets/shopping-bag.png";
+import logo from "../../assets/Logo.png";
+import hearth from "../../assets/hearth.png";
+import bag from "../../assets/shopping-bag.png";
 
 interface HeaderProps {
     cartCount: number;

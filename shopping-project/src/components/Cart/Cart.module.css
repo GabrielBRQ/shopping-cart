@@ -100,3 +100,13 @@
   font-size: 1.2rem;
   color: #555;
 }
+
+@media (max-width: 768px) {
+    .cartContainer {
+        flex-direction: column;
+    }
+
+    .bag {
+        width: 90%;
+    }
+}
