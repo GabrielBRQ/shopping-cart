@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-// Defina a interface aqui ou importe de types.ts
 interface Product {
     id: number;
     title: string;

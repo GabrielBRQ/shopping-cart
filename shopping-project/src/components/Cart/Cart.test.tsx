@@ -103,14 +103,11 @@ describe("Componente Cart", () => {
 
         renderCart();
 
-        // Clica primeiro em finalizar para ir para a tela de sucesso
         await user.click(screen.getByRole("button", { name: /finalizar compra/i }));
 
-        // Agora clica em voltar
         const backBtn = screen.getByRole("button", { name: /voltar para a loja/i });
         await user.click(backBtn);
 
-        // Verifica se o navigate foi chamado com "/"
         expect(mockNavigate).toHaveBeenCalledWith("/");
     });
 });

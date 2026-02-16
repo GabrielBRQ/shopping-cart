@@ -1,4 +1,3 @@
-// ProductDetails.tsx
 import { useParams, useOutletContext } from "react-router-dom";
 import { useProducts } from "../../hooks/useProducts";
 import styles from "./Detail.module.css";
