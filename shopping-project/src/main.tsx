@@ -26,11 +26,14 @@ const Layout = () => {
   const [cart, setCart] = useState<CartItem[]>([]);
 
   const addToCart = (product: Product) => {
+    const newCartId = crypto.randomUUID();
     const newItem = {
       ...product,
-      cartId: crypto.randomUUID()
+      cartId: newCartId
     };
     setCart((prevCart) => [...prevCart, newItem]);
+
+    return newCartId;
   };
 
   const removeFromCart = (cartId: string) => {
